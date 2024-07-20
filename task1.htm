@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="a">
+    <button onclick="deyisdir()"><=></button>
+    <input type="text" id="b">
+    <script>
+        let a = document.getElementById("a");
+        let b = document.getElementById("b");
+        function deyisdir(){
+            let c = a.value
+            a.value = b.value
+            b.value = c 
+        }
+    </script>
+</body>
+</html>

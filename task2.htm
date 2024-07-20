@@ -1,0 +1,32 @@
+c<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="a">
+    <input type="text" id="b">
+    <input type="text" id="c">
+    <button onclick="btn()">Ok</button>
+    <p id="toplama"></p>
+    <p id="edediOrta"></p>
+    <p id="hasil"></p>
+
+    <script>
+        let a = document.getElementById("a")
+        let b = document.getElementById("b")
+        let c = document.getElementById("c")
+        let toplama = document.getElementById("toplama")
+        let edediOrta = document.getElementById("edediOrta")
+        let hasil = document.getElementById("hasil")
+    function btn(){
+        toplama.innerHTML = `Cemi: ${+a.value + +b.value + +c.value}`; 
+        edediOrta.innerHTML = `Ededi Orta: ${(+a.value + +b.value + +c.value) / 3}`;
+        hasil.innerHTML = `Hasil: ${ a.value * b.value * c.value}`;
+    }
+    </script>
+
+</body>
+</html>
